@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detikcom</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Home Page -->
+    <section class="h-[60rem] w-screen bgHome relative" id="home" >
+        <div class="w-screen h-auto">
+            <!-- navbar Desktop -->
+            <div class="fixed z-10 flex h-auto w-[74.625rem] px-[1.5625rem] top-[5%] right-[5%] left-[5%] justify-center m-auto py-[1.1875rem] items-center gap-[7.5rem] rounded-[6.25rem] navBg max-desktop:right-0 max-desktop:left-0 max-[1200px]:w-auto max-[1200px]:justify-between max-[1200px]:px-[3rem]">
+                <a href=""><img src="/dist/img/navbar-brand.png" alt="" class="w-[12.5rem] h-[2.64213rem] shrink-0"></a>
+                <div class="flex items-center gap-[3.1875rem] justify-end flex-0 text-primaryDark font-semibold max-[1200px]:hidden">
+                    <a href="#home" class="">Home</a>
+                    <a href="#about" class="">Tentang Acara</a>
+                    <a href="#gallery" class="">Galeri</a>
+                    <a href="#news" class="">Berita</a>
+                    <a href=" " class="px-[1.25rem] py-[0.62rem] rounded-full text-white transition bg-gradientBlue hover:bg-gradientGreen duration-700">Register</a>
+                </div>
+                
+                <div class="hidden px-[0.8rem] pt-[0.8rem] pb-[0.45rem] bg-white rounded-full max-[1200px]:block"><button id="menu-toggle"><img src="/dist/img/handburger-icon.png" alt=""></button></div>
+                
+                <!-- Navbar  Mobile -->
+                <div id="menu-overlay" class="fixed hidden inset-0 top-[-19%] h-[25rem] bg-white transition-all duration-700 ease-in-out z-50">
+                    <div class="flex items-center justify-center h-full">
+                        <div class="text-primaryDark text-2xl">
+                            <!-- Close Button -->
+                            <button id="close-menu" class="focus:outline-none absolute right-[58px] ">
+                                <img src="/dist/img/handburger-icon-close.png" width="30px" height="30px" alt="">
+                            </button>
+                            <!-- Hamburger Menu Links -->
+                            <div class="flex flex-col items-center gap-[2rem] justify-center flex-0 text-primaryDark font-semibold">
+                                <a href="#home" class="">Home</a>
+                                <a href="#about" class="">Tentang Acara</a>
+                                <a href="#gallery" class="">Galeri</a>
+                                <a href="#news" class="">Berita</a>
+                                <a href=" " class="px-[1.25rem] py-[0.62rem] rounded-full text-white transition bg-gradientBlue hover:bg-gradientGreen duration-700">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- text event -->
+            <div class="flex flex-col ml-[7rem] justify-center items-start h-[60rem] m-auto w-auto max-[1200px]:h-[50rem] max-[1000px]:ml-0 max-[700px]:items-center">
+                <img src="/dist/img/logo-event2.png" alt="logo-event" class="w-[42.875rem] h-[17.25rem] shrink-0 mb-[3.56rem] max-[1200px]:w-[22.9375rem] max-[1200px]:h-[9.1875rem]">
+                <a href="#about" class="py-[0.74rem] px-[1.56rem] bg-[#FFC73C] rounded-[6.25rem] shadow-yellow text-white font-[700] not-italic leading-normal text-[1rem] text-center uppercase max-[700px]:ml-[-10rem]">Tentang Acara</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About page -->
+    <section class="h-[61.625rem] w-screen py-[8.56rem] px-[7.69rem] max-[1200px]:py-[1.5rem]" id="about">
+        
+        <!-- box container -->
+        <div class="flex flex-col w-auto h-auto gap-y-[3.12rem] justify-center items-center">
+
+            <div class="w-auto h-auto flex gap-x-[1.88rem] max-[1200px]:flex-wrap max-[1200px]:gap-y-[1.88rem] max-[1200px]:justify-center max-[1200px]:items-center">
+                <!-- big box -->
+                <div class="flex flex-col w-auto h-auto items-start gap-[1.875rem] rounded-[2rem] p-[2rem] blueGradient ">
+                    <div class="w-[32.375rem] h-[24.25rem] shrink-0 rounded-[1.25rem] max-[1200px]:w-[21.1875rem] max-[1200px]:h-[15.875rem]">
+                        <img src="/dist/img/map1.png" alt="map">
+                    </div>
+                    <div class="text-white leading-normal">
+                        <div class="text-left text-[3rem] italic font-[900] leading-normal uppercase max-[1200px]:text-[1.5rem]">10k fun run</div>
+                        <div class="w-[32.375rem] text-[1rem] font-[600] leading-normal not-italic max-[1200px]:text-[0.875rem] max-[1200px]:w-[21.372rem]">Dimulai pukul 6 pagi, nikmati pemandangan kota di pagi hari dimulai dari Bundaran HI hingga Patung Pemuda Membangun di Senayan lalu kembali lagi ke Bundaran HI!</div>
+                    </div>
+                </div>
+    
+                <!-- Container about boxes -->
+                <div class="flex flex-col gap-y-[1.69rem]">
+                    <!-- box 1 -->
+                    <div class="w-auto h-auto p-[2rem] items-start gap-[1.875rem] rounded-[2rem] blueGradient max-[1200px]:w-auto">
+                        <div class="flex flex-col items-start gap-[0.625rem] w-[32.375rem] max-[1200px]:w-[21.372rem]">
+                            <div class="text-white text-center text-[2.25rem] italic font-[900] leading-normal uppercase max-[1200px]:text-[1.5rem]">gratis dan berhadiah</div>
+                            <div class="text-white text-[1rem] not-italic font-[600] leading-normal max-[1200px]:text-[0.875rem]">Pendaftaran gratis! Ajak keluarga anda dan menangkan hadiah total puluhan juta rupiah doorprize menarik!</div>
+                        </div>
+                    </div>
+                    <!-- box 2 -->
+                    <div class="w-auto h-auto p-[2rem] items-start gap-[1.875rem] rounded-[2rem] blueGradient max-[1200px]:w-auto">
+                        <div class="flex flex-col items-start gap-[0.625rem] w-[32.375rem] max-[1200px]:w-[21.372rem]">
+                            <div class="text-white text-center text-[2.25rem] italic font-[900] leading-normal uppercase max-[1200px]:text-[1.5rem]">50+ tenant bazzar </div>
+                            <div class="text-white text-[1rem] not-italic font-[600] leading-normal max-[1200px]:text-[0.875rem]">Dapatkan promo menarik pada booth-booth tenant bazzar Sudirman Run 2023 mulai dari F&B hingga fashion</div>
+                        </div>
+                    </div>
+                    <!-- box 3 -->
+                    <div class="flex w-auto h-auto p-[2rem] items-start gap-[1.875rem] rounded-[2rem] blueGradient max-[1200px]:flex-col max-[1200px]:w-auto">
+                        <div class="w-[11.125rem] h-[11.125rem] shrink-0 rounded-[1.25rem] max-[1200px]:w-[21.3125rem] max-[1200px]:h-[16rem]">
+                            <img src="/dist/img/RAN.png" alt="RAN Picture" class="max-[1200px]:w-[21.3125rem] max-[1200px]:h-[16rem]">
+                        </div>
+    
+                        <div class="flex flex-col w-[17.375rem] items-start gap-[0.625rem] ">
+                            <div class="text-white text-left text-[2.25rem] italic font-[900] leading-normal self-stretch uppercase max-[1200px]:text-[1.5rem]">special perfomance</div>
+                            <div class="text-white text-[1rem] not-italic font-[600] leading-normal max-[1200px]:text-[0.875rem]">Saksikan penampilan dari RAN, Ayu Ting Ting, Diskoria, serta hiburan lainnya!</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- Button -->
+            <div class="flex justify-center">
+                <a href="" class="py-[0.74rem] px-[1.56rem] bg-[#FFC73C] rounded-[6.25rem] shadow-yellow text-white font-[700] not-italic leading-normal text-[1rem] text-center uppercase">daftar sekarang</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Marquee Sponsors -->
+    <section class="w-screen h-auto py-[3.75rem] flex flex-col gap-y-[1.88rem] blueGradient max-[1200px]:mt-[39rem]">
+        <div class="w-auto h-auto text-white text-center text-[2.25rem] not-italic font-[900] leading-normal uppercase">didukung oleh</div>
+      
+        <div class="overflow-hidden">
+          <div class="marquee-content">
+            <span class="flex justify-start gap-[0.825rem]">
+              <!-- sponsor box sequoia -->
+              
+              <div class="w-[18.1875rem] whitespace-nowrap h-[9rem] py-[1.56rem] px-[2.38rem] bg-white rounded-[0.625rem]">
+                <div class="w-[13.5rem] h-[100%] bg-1 bg-contain bg-no-repeat bg-center"></div>
+              </div>
+              <div class="w-[18.1875rem] whitespace-nowrap h-[9rem] py-[1.56rem] px-[2.38rem] bg-white rounded-[0.625rem]">
+                <div class="w-[13.5rem] h-[100%] bg-2 bg-contain bg-no-repeat bg-center"></div>
+              </div>
+              <div class="w-[18.1875rem] whitespace-nowrap h-[9rem] py-[1.56rem] px-[2.38rem] bg-white rounded-[0.625rem]">
+                <div class="w-[13.5rem] h-[100%] bg-3 bg-contain bg-no-repeat bg-center"></div>
+              </div>
+              <div class="w-[18.1875rem] whitespace-nowrap h-[9rem] py-[1.56rem] px-[2.38rem] bg-white rounded-[0.625rem]">
+                <div class="w-[13.5rem] h-[100%] bg-4 bg-contain bg-no-repeat bg-center"></div>
+              </div>
+              <div class="w-[18.1875rem] whitespace-nowrap h-[9rem] py-[1.56rem] px-[2.38rem] bg-white rounded-[0.625rem]">
+                <div class="w-[13.5rem] h-[100%] bg-5 bg-contain bg-no-repeat bg-center"></div>
+              </div>
+              <div class="w-[18.1875rem] whitespace-nowrap h-[9rem] py-[1.56rem] px-[2.38rem] bg-white rounded-[0.625rem]">
+                <div class="w-[13.5rem] h-[100%] bg-6 bg-contain bg-no-repeat bg-center"></div>
+              </div>
+              <div class="w-[18.1875rem] whitespace-nowrap h-[9rem] py-[1.56rem] px-[2.38rem] bg-white rounded-[0.625rem]">
+                <div class="w-[13.5rem] h-[100%] bg-7 bg-contain bg-no-repeat bg-center"></div>
+              </div>
+              <div class="w-[18.1875rem] whitespace-nowrap h-[9rem] py-[1.56rem] px-[2.38rem] bg-white rounded-[0.625rem]">
+                <div class="w-[13.5rem] h-[100%] bg-8 bg-contain bg-no-repeat bg-center"></div>
+              </div>
+              <!-- Add more sponsor boxes as needed -->
+      
+            </span>
+          </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <div class="slider-wrapper">
+            <div class="text-[#212427] text-center text-[2.25rem] not-italic font-[900] leading-normal mb-[1rem] uppercase max-[700px]:text-[1.5rem]">galeri sudirman run 2022</div>
+            <div id="sync1" class="owl-carousel owl-theme">
+                <div class="item">
+                  <img class="main-image" src="https://s3-alpha-sig.figma.com/img/18f0/7fa2/c6fa6f98051d31ca65692f6d142a7342?Expires=1704672000&Signature=I7SzqAkn6zTiMBrxjUKMi9hZxVphSeSSaRpAh7r8WaJEDec8tNJYqmFUG296xc3I2PD7GpBgmJvy1NWbU1elcoILRzf3SEnVEB9XkJciMNDrcLpBqSwpm4coqw0whbM9G45Dxn5o-AH3DRgtAonLPVE1mlwVI6D9avb09I10X-jkSu6GS4q4OWOvtZxkMvyoId2zluE~coiCiow~cyjw2swiuaKkrGbm4haCrmjmeoUhj61BpuONIHVMFi9iYovrbEFwDqLAiuCxoQUZ82tS0BTDyLtrFdOT8FHMs4SKFjn~wyVMmSLc7dpqdiYCzAQzjquO1nZ1A~1gjYceez-ptw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">  
+                </div>
+                <div class="item">
+                  <img class="main-image" src="https://s3-alpha-sig.figma.com/img/4f42/6cd5/d9994df19dde650523857ec927765fbb?Expires=1704672000&Signature=MR6zJgAP2FkhwBU8L8PHShL2PWm80CacZigmbbwPSs83NxrVeP-ZbL3hshQ5WPXm0sREYl-myPs52uzqbXK5951cWCmY1vmrJC3prclMthlp~LPQz38dPmIQP7X68lmhsgg63d9-JOIdTqoXyo9Tmv3sKbhxprCJz2Hc~d0oAUwesuQUa20359aqui~6H5WOqTpGCQvhMRh2165yVgDuNPaP3Ws7n9dTbCroQIc7BA8vXVYILTNGf1e0OpEZTy8Rq9yF2hE608MmcGNZw~-qXeXacmq~MCsYokvNQXCzXfYM8H5X7nTzt5a3o5JQNefX9rG8MZn4Ldo3WXK3y7rKfQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+                </div>
+                <div class="item">
+                  <img class="main-image" src="https://s3-alpha-sig.figma.com/img/c787/9865/db521a14c80245fadb02ff7448cc3335?Expires=1704672000&Signature=ApKea2861xXw8LvgwG1yVHwTVqlPNZRyHH80S5zAykRSYrlKtv4h-aEJC3-mXbTotZU8AwMZWGUTw9YDFyJ8YrdjupCaQ8iTK8l3f672E~KYfXxNAJCKdZ7cMqqGAVXJoXN7akMce8AycgNiy5mBH6jUdYPb100l7xLcm2WTVUbAHqOqbY3mL4muhzmdBqhxPDsozt1VHOmdR4owyzLhNrv2qKkN3iQUeNTGFgkErOHdD1oVSn83jPhtxYElLSmglIsI7LDjwayQAwGQBdydLsgM1NgRvGahuNEWmKpANBokuX19nfEkcVwN2H-YPDxLS-NCMmSlzcQ9zo-yyk1~jA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+                </div>
+                <div class="item">
+                  <img class="main-image" src="https://s3-alpha-sig.figma.com/img/77e7/ed29/dfc7a171fb13c778e5fdd222fb1470cc?Expires=1704672000&Signature=PwdXJM8SwzH3DK71W8six9mPi6kbGW1HO3Tgl-gNNZiQvLgmn592vhjQQnAKzm~3aCbr0k4kPxrWJfu8Cr5z0MoBNAvMA99Jf3coi7jTPgfWRAlFYqinFd7yYvvucHfWbPFLqxb467susvhPYNFkExFvZZjeBfarAj53pgvHzMtOt0MvS1XJvmN2dLU2K5a1PI3j0Y9gEo1dq1oL4b683KOm0YOeOcguHxcdG7Zk9jTL74waVnfEAI~cEjpugwfhOwCfJftOMce8ECZJApV3IC13otC~nKFG24jTCiublULJ8g9MEMd0rR~XPduWl1AB8A3mU-5UTYS-oUdLkfZRtg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+                </div>
+            </div>
+            
+            <div id="sync2" class="owl-carousel owl-theme thumbnail-carousel">
+                <div class="item">
+                    <img src="https://s3-alpha-sig.figma.com/img/18f0/7fa2/c6fa6f98051d31ca65692f6d142a7342?Expires=1704672000&Signature=I7SzqAkn6zTiMBrxjUKMi9hZxVphSeSSaRpAh7r8WaJEDec8tNJYqmFUG296xc3I2PD7GpBgmJvy1NWbU1elcoILRzf3SEnVEB9XkJciMNDrcLpBqSwpm4coqw0whbM9G45Dxn5o-AH3DRgtAonLPVE1mlwVI6D9avb09I10X-jkSu6GS4q4OWOvtZxkMvyoId2zluE~coiCiow~cyjw2swiuaKkrGbm4haCrmjmeoUhj61BpuONIHVMFi9iYovrbEFwDqLAiuCxoQUZ82tS0BTDyLtrFdOT8FHMs4SKFjn~wyVMmSLc7dpqdiYCzAQzjquO1nZ1A~1gjYceez-ptw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">  
+                </div>
+                <div class="item">
+                  <img src="https://s3-alpha-sig.figma.com/img/4f42/6cd5/d9994df19dde650523857ec927765fbb?Expires=1704672000&Signature=MR6zJgAP2FkhwBU8L8PHShL2PWm80CacZigmbbwPSs83NxrVeP-ZbL3hshQ5WPXm0sREYl-myPs52uzqbXK5951cWCmY1vmrJC3prclMthlp~LPQz38dPmIQP7X68lmhsgg63d9-JOIdTqoXyo9Tmv3sKbhxprCJz2Hc~d0oAUwesuQUa20359aqui~6H5WOqTpGCQvhMRh2165yVgDuNPaP3Ws7n9dTbCroQIc7BA8vXVYILTNGf1e0OpEZTy8Rq9yF2hE608MmcGNZw~-qXeXacmq~MCsYokvNQXCzXfYM8H5X7nTzt5a3o5JQNefX9rG8MZn4Ldo3WXK3y7rKfQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+                </div>
+                <div class="item">
+                  <img src="https://s3-alpha-sig.figma.com/img/c787/9865/db521a14c80245fadb02ff7448cc3335?Expires=1704672000&Signature=ApKea2861xXw8LvgwG1yVHwTVqlPNZRyHH80S5zAykRSYrlKtv4h-aEJC3-mXbTotZU8AwMZWGUTw9YDFyJ8YrdjupCaQ8iTK8l3f672E~KYfXxNAJCKdZ7cMqqGAVXJoXN7akMce8AycgNiy5mBH6jUdYPb100l7xLcm2WTVUbAHqOqbY3mL4muhzmdBqhxPDsozt1VHOmdR4owyzLhNrv2qKkN3iQUeNTGFgkErOHdD1oVSn83jPhtxYElLSmglIsI7LDjwayQAwGQBdydLsgM1NgRvGahuNEWmKpANBokuX19nfEkcVwN2H-YPDxLS-NCMmSlzcQ9zo-yyk1~jA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+                </div>
+                <div class="item">
+                  <img src="https://s3-alpha-sig.figma.com/img/77e7/ed29/dfc7a171fb13c778e5fdd222fb1470cc?Expires=1704672000&Signature=PwdXJM8SwzH3DK71W8six9mPi6kbGW1HO3Tgl-gNNZiQvLgmn592vhjQQnAKzm~3aCbr0k4kPxrWJfu8Cr5z0MoBNAvMA99Jf3coi7jTPgfWRAlFYqinFd7yYvvucHfWbPFLqxb467susvhPYNFkExFvZZjeBfarAj53pgvHzMtOt0MvS1XJvmN2dLU2K5a1PI3j0Y9gEo1dq1oL4b683KOm0YOeOcguHxcdG7Zk9jTL74waVnfEAI~cEjpugwfhOwCfJftOMce8ECZJApV3IC13otC~nKFG24jTCiublULJ8g9MEMd0rR~XPduWl1AB8A3mU-5UTYS-oUdLkfZRtg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="w-screen flex flex-col h-[101.187rem] px-[7.56rem] pt-[10.19rem] pb-[24.9rem] bg-footerBg bg-bottom bg-no-repeat bg-cover max-[1000px]:bg-auto max-[1400px]:px-[1rem] max-[800px]:pt-[0rem] max-[800px]:pb-[5rem]">
+      <div class="text-[#212427] text-center text-[2.25rem] not-italic font-[900] leading-normal uppercase mb-[3.375rem] max-[1000px]:text-[1.5rem]">artikel terkait</div>
+      
+      <div class="max-[800px]:mt-[-1.5rem]">
+          <div class="w-[20.8125rem] h-auto m-auto flex justify-center items-center gap-[1.63rem] rounded-full capitalize text-[#FFF] bg-gradientBlue">
+              <button data-filter="artikel" class="list active px-[1.7rem] py-[0.5rem] rounded-full text-[1rem] not-italic font-[600] leading-normal">artikel</button>
+              <button data-filter="foto" class="list px-[1.7rem] py-[0.5rem] rounded-full text-[1rem] not-italic font-[600] leading-normal">foto</button>
+              <button data-filter="video" class="list px-[1.7rem] py-[0.5rem] rounded-full text-[1rem] not-italic font-[600] leading-normal">video</button>
+          </div>
+
+          <!-- konten artikel -->
+          <div class="flex flex-wrap mt-[3.125rem] justify-center items-center gap-[2.1875rem] m-auto w-[74.875rem] h-auto max-[1300px]:flex-wrap max-[1200px]:w-auto">
+              <a href="" class="box video flex flex-col max-[1000px]:flex-row max-[1000px]:gap-x-[1rem] max-[1000px]:items-center">
+                  <div class="w-[23.5rem] h-[17.625rem] shrink-0 bg-content1 bg-center bg-cover rounded-[2rem] max-[1000px]:w-[8.33331rem] max-[1000px]:h-[8.33331rem] max-[1000px]:rounded-[1rem]"></div>
+                  <div class="w-[23.5rem] not-italic leading-normal font-[700] max-[1000px]:w-auto">
+                      <div class="text-primaryDark text-[1rem] h-[3rem] line-clamp-2 max-[1000px]:line-clamp-3 max-[1000px]:h-auto">Sukses Finish Marathon di Jakarta, Osha Penyandang Autisme Beberkan Prosesnya</div>
+                      <div class="text-[#6C6C6C] mt-[0.62rem] text-[0.75rem] not-italic font-[500] leading-normal">Sabtu, 25 Nov 2023 20:00 WIB</div>
+                  </div>
+              </a>
+              <a href="" class="box foto flex flex-col max-[1000px]:flex-row max-[1000px]:gap-x-[1rem] max-[1000px]:items-center">
+                  <div class="w-[23.5rem] h-[17.625rem] shrink-0 bg-content2 bg-center bg-cover rounded-[2rem] max-[1000px]:w-[8.33331rem] max-[1000px]:h-[8.33331rem] max-[1000px]:rounded-[1rem]"></div>
+                  <div class="w-[23.5rem] h-auto not-italic leading-normal font-[700] max-[1000px]:w-auto">
+                      <div class="text-primaryDark text-[1rem] h-[3rem] line-clamp-2 max-[1000px]:line-clamp-3 max-[1000px]:h-auto">Edukasi Lingkungan Hidup Bonus Sehat di 'Misi Lestari 2023: See Nature</div>
+                      <div class="text-[#6C6C6C] mt-[0.62rem] text-[0.75rem] not-italic font-[500] leading-normal">Selasa, 28 Nov 2023 07:42 WIB</div>
+                  </div>
+              </a>
+              <a href="" class="box video flex flex-col max-[1000px]:flex-row max-[1000px]:gap-x-[1rem] max-[1000px]:items-center">
+                  <div class="w-[23.5rem] h-[17.625rem] shrink-0 bg-content3 bg-center bg-cover rounded-[2rem] max-[1000px]:w-[8.33331rem] max-[1000px]:h-[8.33331rem] max-[1000px]:rounded-[1rem]"></div>
+                  <div class="w-[23.5rem] h-auto not-italic leading-normal font-[700] max-[1000px]:w-auto">
+                      <div class="text-primaryDark text-[1rem] h-[3rem] line-clamp-2 max-[1000px]:line-clamp-3 max-[1000px]:h-auto">Gokil! Puluhan Ribu Orang Ramaikan Pertamina Eco RunFest 2023</div>
+                      <div class="text-[#6C6C6C] mt-[0.62rem] text-[0.75rem] not-italic font-[500] leading-normal">Minggu, 26 Nov 2023 13:04 WIB</div>
+                  </div>
+              </a>
+              <a href="" class="box video flex flex-col max-[1000px]:flex-row max-[1000px]:gap-x-[1rem] max-[1000px]:items-center">
+                  <div class="w-[23.5rem] h-[17.625rem] shrink-0 bg-content4 bg-center bg-cover rounded-[2rem] max-[1000px]:w-[8.33331rem] max-[1000px]:h-[8.33331rem] max-[1000px]:rounded-[1rem]"></div>
+                  <div class="w-[23.5rem] h-auto not-italic leading-normal font-[700] max-[1000px]:w-auto">
+                      <div class="text-primaryDark text-[1rem] h-[3rem] line-clamp-2 max-[1000px]:line-clamp-3 max-[1000px]:h-auto">Kelar Lari di CT Arsa Charity Fun Run, 'Recharge' Energi Nonton Maliq & D'essentials</div>
+                      <div class="text-[#6C6C6C] mt-[0.62rem] text-[0.75rem] not-italic font-[500] leading-normal">Sabtu, 18 Nov 2023 17:39 WIB</div>
+                  </div>
+              </a>
+              <a href="" class="box foto flex flex-col max-[1000px]:flex-row max-[1000px]:gap-x-[1rem] max-[1000px]:items-center">
+                  <div class="w-[23.5rem] h-[17.625rem] shrink-0 bg-content5 bg-center bg-cover rounded-[2rem] max-[1000px]:w-[8.33331rem] max-[1000px]:h-[8.33331rem] max-[1000px]:rounded-[1rem]"></div>
+                  <div class="w-[23.5rem] h-auto not-italic leading-normal font-[700] max-[1000px]:w-auto">
+                      <div class="text-primaryDark text-[1rem] h-[3rem] line-clamp-2 max-[1000px]:line-clamp-3 max-[1000px]:h-auto">CT Arsa Charity Fun Run 2023 Bertabur Emas</div>
+                      <div class="text-[#6C6C6C] mt-[0.62rem] text-[0.75rem] not-italic font-[500] leading-normal">Kamis, 16 Nov 2023 16:34 WIB</div>
+                  </div>
+              </a>
+              <a href="" class="box foto flex flex-col max-[1000px]:flex-row max-[1000px]:gap-x-[1rem] max-[1000px]:items-center">
+                  <div class="w-[23.5rem] h-[17.625rem] shrink-0 bg-content6 bg-center bg-cover rounded-[2rem] max-[1000px]:w-[8.33331rem] max-[1000px]:h-[8.33331rem] max-[1000px]:rounded-[1rem]"></div>
+                  <div class="w-[23.5rem] h-auto not-italic leading-normal font-[700] max-[1000px]:w-auto">
+                      <div class="text-primaryDark text-[1rem] h-[3rem] line-clamp-2 max-[1000px]:line-clamp-3 max-[1000px]:h-auto">BTN Jakarta Run 2023 Dorong dan Geliatkan Sport Tourism Jakarta</div>
+                      <div class="text-[#6C6C6C] mt-[0.62rem] text-[0.75rem] not-italic font-[500] leading-normal">Minggu, 12 Nov 2023 11:55 WIB</div>
+                  </div>
+              </a>
+          </div>
+      </div>
+
+      <div class="flex justify-center items-center my-[3rem]"><a href="" class="py-[0.74rem] px-[1.56rem] bg-[#FFC73C] rounded-[6.25rem] shadow-yellow text-white font-[700] not-italic leading-normal text-[1rem] text-center uppercase">lihat lebih banyak</a></div>
+    </section>
+
+    <footer class="w-screen h-auto py-[3.125rem] px-[4.275rem] bg-[#28A997] flex flex-col items-start gap-[1.875rem] max-[1400px]:px-[1rem] max-[1335px]:items-center ">
+      <div class=""><img class="w-[22.05731rem] h-[9.58331rem] shrink-0" src="/dist/img/footer-brand.png" alt=""></div>
+
+      <div class="flex flex-row gap-[6.25rem] max-[1335px]:flex-col max-[1335px]:mt-[1.5rem] max-[1335px]:gap-[4rem]">
+          <div class="text-[1rem] w-[63rem] not-italic font-[400] text-white leading-normal max-[1335px]:text-center max-[1335px]:w-[50rem] max-[900px]:w-[22.875rem] ">Event olahraga lari sejauh 10 kilometer yang diselenggarakan oleh Detikhealth secara gratis untuk masyarakat Indonesia. Ajak keluarga dan kerabat anda untuk ikut keseruan Sudirman Run 2023 lalu menangkan hadiah utama serta doorprize dengan total puluhan juta rupiah</div>
+
+          <div class="flex flex-col w-[12rem] gap-[0.44rem] justify-center items-center max-[1335px]:w-auto">
+              <div class="text-center text-white text-[0.75rem] not-italic font-[400] leading-[1rem] tracking-[0.00375rem] capitalize">connect with us</div>
+              <div class="flex flex-row gap-[0.5rem]">
+                  <a href="" class=""><img src="/dist/img/facebook.png" alt=""></a>
+                  <a href="" class=""><img src="/dist/img/twitter.png" alt=""></a>
+                  <a href="" class=""><img src="/dist/img/instagram.png" alt=""></a>
+                  <a href="" class=""><img src="/dist/img/linkedin.png" alt=""></a>
+                  <a href="" class=""><img src="/dist/img/youtube.png" alt=""></a>
+              </div>
+          </div>
+
+      </div>
+      
+      <div class="w-[81.25rem] h-[0.0625rem] bg-white text-white max-[1350px]:w-[96%]"></div>
+
+      <div class="text-white text-[1rem] not-italic font-[400] leading-[1rem] tracking-[0.005rem]">Copyright @ 2023 detikcom. All right reserved</div>
+
+  </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="script.js"></script>
+    
+</body>
+
+
+</html>

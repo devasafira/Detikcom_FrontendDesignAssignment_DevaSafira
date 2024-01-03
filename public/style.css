@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  scroll-behavior: smooth;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.bgHome{
+    background: url('/dist/img/bg-desktop1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navBg{
+    background: rgba(255, 255, 255, 0.50);
+    backdrop-filter: blur(25px);
+}
+
+.blueGradient{
+    background: linear-gradient(237deg, #59FFB9 -30.09%, #326CFF 71.21%);
+}
+
+.active{
+  border: solid white 1px;
+  background:rgba(255, 255, 255, 0.50);
+}
+
+.register{
+    background: linear-gradient(237deg, #59FFB9 -30.09%, #326CFF 71.21%);    
+    transition: 1s;
+}
+
+.register:hover{
+    background: linear-gradient(57deg, #59FFB9 -30.09%, #326CFF 71.21%);
+    transition: 1s;
+}
+
+
+.marquee-content {
+    display: inline-block;
+    white-space: nowrap;
+    transition: all .2s ease-out;
+    animation: marqueeAnimation 40s linear infinite;
+}
+
+@keyframes marqueeAnimation {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-83%);
+    }
+}
+
+/* gallery */
+.main-image {
+    width: 100%;
+    height: 37.75rem;
+    aspect-ratio: 16/9;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 2rem;
+    
+}
+
+#sync1 .item {
+    border-radius: 2rem;
+  }
+
+#sync2 .item {
+    margin-left: 0.5rem ;
+    margin-right: 0.5rem;
+    align-self: stretch;
+    flex: 1 0 0;
+    filter: grayscale(100%);
+}
+
+#sync2 .current .item {
+  filter: grayScale(0%);
+}
+
+
+#sync1.owl-theme .owl-next,
+#sync1.owl-theme .owl-prev {
+  background: transparent;
+}
+
+#gallery{
+    width: 100%;
+    height: 77rem;
+    padding: 12.06rem 10.94rem;
+}
+
+.slider-wrapper {
+  position: relative;
+}
+
+.thumbnail-carousel {
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.thumbnail-carousel img {
+  width: 1587,5%;
+  height: 906,25%;
+  aspect-ratio: 16/9;
+  flex: 1 0 0;
+  border-radius: 1rem;
+  background-size: cover;
+  background-position: center;
+  align-self: stretch;
+}
+
+.current .thumbnail-carousel img{
+    filter: grayscale(0%);
+}
+
+.owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 75%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.owl-next, .owl-prev {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  padding: 5px;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 800px){
+  .bgHome{
+    background: url('https://s3-alpha-sig.figma.com/img/a86e/ab6b/fa8f998567b573cc4a23d8d1ad6e7871?Expires=1705276800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=a1GH-x8KIRDzfmzUGp20vzlSpAItvjaffF2rKIdGn3Al~cQfQSch4iYqHaFDQRKxtlZMJTkTybg5C4b76bUrrxCg9wHKgEA38EWpJfDd~MYb1BDDO~pBnx2sCjFKaxe1fhFQfMofGnLNK27ehYnOk8WNIq6p54r~QGffIs37IYtklM46xhoIUioWuysCE08CoZWHUYc6CLiRUFY29ps9TK9N~WtIrtFsq1Tl4hC6RY8Er58OiANX9IEvzNrGat92zP8xWQuv7ipUG5hVkyUaCA-lFB82g2M-6tSsZgBMIzZPtKmqVnVRiRYbseGs0gbbhtBvokT6sZXhRwFPqkhFLg__');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #gallery{
+    padding: 6rem 5%;
+    height: 33rem;
+  }
+}
+
+@media screen and (max-width: 1250px){
+  .main-image{
+    height: 3775%;
+  }
+}
