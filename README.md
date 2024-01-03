@@ -22,6 +22,7 @@
 
 4. **Jalankan Live Server**
 
-    ```Menjalankan live server langsung dari Visual Studio Code.
+    ```bash
+    Menjalankan live server langsung dari Visual Studio Code.
 
 
