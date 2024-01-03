@@ -5,7 +5,7 @@
     ```bash
     git clone https://github.com/devasafira/Detikcom_FrontendDesignAssignment_DevaSafira.git
 
-2. **Pindah ke direktori project**
+2. **Masuk ke direktori project**
 
     ```bash
     cd Detikcom_FrontendDesignAssignment_DevaSafira
@@ -19,3 +19,9 @@
 
     ```bash
     npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+
+4. **Jalankan Live Server**
+
+    ```Menjalankan live server langsung dari Visual Studio Code.
+
+
