@@ -1,1 +1,0 @@
-# Detikcom_FrontendDesignAssignment_DevaSafira
